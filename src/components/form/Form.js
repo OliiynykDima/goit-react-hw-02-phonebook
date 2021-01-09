@@ -5,9 +5,9 @@ import css from "./Form.css";
 
 class Form extends Component {
   state = {
-    name: "",
-    id: "",
-    number: "",
+    name: '',
+    number: '',
+    id: ''
   };
   handleSubmit = (event) => {
     event.preventDefault();

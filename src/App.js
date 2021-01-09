@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 
 import Form from "./components/form/Form.js";
-import ContactList from './components/contactList/ContactList.js';
+import ContactList from "./components/contactList/ContactList.js";
+import SearchBar from "./components/searchBar/SearchBar.js";
 
 class App extends Component {
   state = {
@@ -19,7 +20,8 @@ class App extends Component {
     return (
       <>
         <Form addContact={this.addContact} />
-        <ContactList contacts={this.state.contacts}/>
+        <ContactList contacts={this.state.contacts} />
+        <SearchBar data={this.state.contacts} />
       </>
     );
   }
